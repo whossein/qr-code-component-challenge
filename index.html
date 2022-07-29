@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | QR code component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --light-gray: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        font-size: 12px;
+        background-color: var(--light-gray);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .qr-code-wrapper {
+        background-color: var(--white);
+        width: 320px;
+        border-radius: 15px;
+        padding: 20px;
+      }
+
+      .qr-code-image img {
+        border-radius: 10px;
+      }
+
+      .qr-code-title {
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--dark-blue);
+      }
+
+      .qr-code-description {
+        font-weight: 400;
+        color: var(--grayish-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-code-wrapper">
+      <div class="qr-code-image">
+        <img src="./images/image-qr-code.png" alt="qr-code" />
+      </div>
+      <p class="qr-code-title">
+        Improve your front-end skills by building projects
+      </p>
+      <p class="qr-code-description">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+  </body>
+</html>
